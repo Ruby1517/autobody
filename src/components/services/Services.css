@@ -1,0 +1,153 @@
+@import '../../index.css';
+
+
+ .services {  
+    background-repeat: no-repeat;
+    background-size: cover ;
+    margin-left: 13.02vw;
+    display: flex;
+    flex-direction: row;
+    color: var(--color-white);    
+}
+
+.left-service {   
+    padding: 2rem;
+    background-color: rgb(24, 30, 40);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.title-service {     
+    font-size: 4rem;
+    letter-spacing: 1.2px;
+    font-weight: 800;
+    color: rgb(100, 98, 98);
+}
+
+
+
+.about-service {
+    margin-bottom: 2rem;
+    line-height: 2;
+    font-style: italic;
+    font-size: 1.1rem;
+    letter-spacing: 0.8px;
+    color: gray;  
+    text-align: justify; 
+}
+
+.service-wrap {
+    margin: 1.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.service-items {
+    background: var(--color-bg-variant);
+    padding: 1.2rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transation);
+
+}
+.service-items:hover {
+    border-color: var(--color-primary);
+    background: transparent;
+}
+.service-list {
+    border-bottom: 2px solid rgba(255, 102, 0, 0.4);
+    padding-bottom: 0.9rem;
+    margin-bottom: 1.2rem;
+    letter-spacing: 1.3px;
+    font-size: 20px;
+    font-weight: 600;
+    width: 250px;
+}
+
+.list-explain {
+    margin-bottom: 2rem;
+    line-height: 2;    
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: rgb(172, 169, 169);  
+    text-align: justify;
+}
+
+.btn-service {
+    width: fit-content;
+    background-color: var(--color-primary);
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 5%;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    text-align: center;
+    margin: 2rem;  
+}
+
+.btn-service:hover {    
+    padding: 1.1rem;
+}
+
+/* .right-service {
+    flex: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;  
+
+}
+
+.right-service > img {
+    width: 100%;
+    height: 100%;
+
+
+} */
+
+/* MEDIA QUERIES MEDIUM DEVICE (FOR TABLETS) */
+@media screen and (max-width: 1024px) {
+    .services {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
+    }
+
+    .title-service {
+        font-size: 4rem;
+    }
+  }
+  
+  /* MEDIA QUERIES SMALL DEVICE (FOR MOBILE PHONE) */
+  @media screen and (max-width: 600px) {
+    .title-service {
+        font-size: 2rem;
+    }
+
+    .about-service {
+        font-size: 0.8rem;
+    }
+
+    .service-wrap {
+        grid-template-columns: 1fr;
+    }
+    .list-explain {
+        letter-spacing: 0;
+        font-size: 0.9rem;
+    }
+
+    .btn-service {
+        padding: 0.7rem;
+        font-size: 13px;
+        margin: 0;
+
+    }
+  }
+  

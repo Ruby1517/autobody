@@ -1,13 +1,73 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+    --color-bg: #1f1f38;
+    --color-bg-variant: #212155;
+    --color-bg-menu: #15023a;
+    --color-white: rgb(229, 221, 221);
+    --color-primary: rgb(255, 102, 0);
+    --color-primary-variant: rgba(216, 89, 10, 0.902);
+    --color-light: rgba(255, 255, 255, 0.6);
+
+    --transation: all 400ms ease;
+
+    --container-width-lg: 75%;
+    --container-width-md: 86%;
+    --container-width-sm: 98%;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;    
+}
+
+/*** GENERAL STYLES *****/
+
+a:link { text-decoration: none;
+    color:var(--color-white);
+}
+a:hover { text-decoration: none;
+    color:var(--color-white);
+}
+
+
+a:visited { text-decoration: none; 
+    color: var(--color-white);
+}
+
+a:active { text-decoration: none; 
+    color: var(--color-white);
+}
+
+/* MEDIA QUERIES MEDIUM DEVICE (FOR TABLETS) */
+@media screen and (max-width: 1024px) {
+    
+  }
+  
+  
+  /* MEDIA QUERIES SMALL DEVICE (FOR MOBILE PHONE) */
+  @media screen and (max-width: 600px) {
+    
+  }
+  
+  
+

@@ -1,24 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import About from './components/about/About';
+import Contact from './components/contact/Contact';
+import Navbar from './components/navbar/Navbar';
+import Services from './components/services/Services';
+import Home from './components/home/Home';
+import RoutePage from './components/route/RoutePage';
+import Clients from './components/clients/Clients';
+import GapPage from './components/GapPage'
+import Estimate from './components/estimate/Estimate';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+
+
+function App() {  
+
+  return (  
+    <div className='app.js'>
+       <div>
+        <Navbar/>
+       </div>
+        <Home />
+        <About />
+        <Services />
+        <Clients />
+        <GapPage />
+        <Contact />        
+    </div>      
+         
+    
   );
 }
 

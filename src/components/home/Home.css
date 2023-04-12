@@ -1,0 +1,218 @@
+@import '../../index.css';
+ 
+ .home {    
+   height: 100vh;   
+   background: linear-gradient(rgba(38, 40, 49, 0.6), rgb(38, 40, 49, 0.6)), url("../../../public/assets/bg1.jpg");   
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;     
+   display: flex;
+   flex-direction: row;
+   gap: 10%;
+   z-index: -1; 
+   color: white;
+}
+
+
+.left {  
+    padding: 20px; 
+    margin: 8rem 2rem auto auto;      
+    z-index: 2;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;     
+}
+
+.title {    
+  display: flex;
+  flex-direction: row; 
+  gap: 0.7rem;
+}
+.torres {    
+    font-size: 3.8vw;
+    font-weight: 800;  
+}
+
+
+.auto-body {
+    color: var(--color-primary);    
+    font-size: 3.8vw;
+    font-weight: 800;        
+}
+.expert {
+    font-size: 1.8vw;   
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.btn-estimate {
+    width: fit-content;
+    background-color: var(--color-primary);
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 5%;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.btn-estimate:hover {
+   padding: 1.1rem;
+}
+
+.right { 
+    margin-top: 8rem;
+    margin-right: 2rem;
+    text-align: center;    
+    width: 27vw;
+    height: fit-content;
+    background: rgba(255, 102, 0, 0.76);
+    box-shadow: 5px 5px 15px -5px;
+    z-index: 2;  
+    
+}
+
+.hour-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: center;
+    border-bottom: 4px solid var(--color-white);
+    margin: 2rem;
+    font-size: 5vw;
+    font-weight: 700;  
+}
+
+.work-hour {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2.5rem;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px solid var(--color-white);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.home__icons {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5px;
+    justify-content: center;
+    align-items: center;   
+    cursor: pointer; 
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.home__icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    letter-spacing: 0.09px;
+    color: white;
+}
+
+.home__icons a {
+    color: white;
+    margin-bottom: 1rem;
+}
+.home__icons a:hover {
+    font-size:1.2rem;   
+}
+
+    
+  
+
+
+
+/* MEDIA QUERIES MEDIUM DEVICE (FOR TABLETS) */
+@media screen and (max-width: 1024px) {
+    .home {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.1rem;
+        align-items: center;
+    }
+    .left {
+        width: 100%;   
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 200px;
+        padding: 20px;        
+        margin-bottom: 0;   
+    }
+    .torres, .auto-body {
+        font-size: 8vw;
+    }
+
+    .expert {
+        font-size: 2rem;
+    }
+
+    .btn-estimate {
+        padding: 0.9rem;
+        margin-top: 4rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .right {        
+        padding: 0;       
+        width: 60%;   
+    }
+ }
+ 
+/* MEDIA QUERIES SMALL DEVICE (FOR MOBILE PHONE) */
+@media screen and (max-width: 600px) {
+   .torres, .auto-body {
+        font-size: 7.5vw;
+    }
+
+    .expert {
+        display: none;
+    }
+
+    .btn-estimate {
+        padding: 0.5rem;
+        margin-top: 1rem;
+        font-size: 0.7rem;
+        text-align: center;
+    }
+    .right {        
+        margin: 2rem 4rem;  
+        padding: 0;       
+        width: 90%;
+        height: fit-content;
+    }
+
+    .hour__icons {
+        margin: 1rem;
+        font-size: 2vw;
+        font-weight: 500; 
+    }
+    .work-hour {        
+        margin: 0.8rem;
+        padding-bottom: 0.7rem;        
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .home__icon {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .home__icons a {
+        margin-top: -0.5rem;
+    }
+  
+    
+  }
+  
