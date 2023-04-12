@@ -38,12 +38,13 @@ textarea {
 .btn-contact { 
     width: fit-content;
     background-color: var(--color-primary);
-    color: white;
-    padding: 0.6rem;
+    color: var(--color-white);
+    padding: 0.8rem;
     border: none;
-    font-size: 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
     font-weight: 600;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.2px;
     cursor: pointer;
     text-align: center;   
     margin: 0.8rem;  
@@ -51,7 +52,9 @@ textarea {
 }
 
 .btn-contact:hover {
-   padding: 0.85rem;
+    text-decoration: none;
+    color: var(--color-white);
+   padding: 0.9rem;
 }
 
 .right-contact {

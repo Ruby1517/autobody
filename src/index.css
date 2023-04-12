@@ -16,8 +16,9 @@
     --color-bg-variant: #212155;
     --color-bg-menu: #15023a;
     --color-white: rgb(229, 221, 221);
-    --color-primary: rgb(255, 102, 0);
-    --color-primary-variant: rgba(216, 89, 10, 0.902);
+    --color-primary: rgb(252, 114, 21);
+    /* --color-primary-variant: rgba(216, 89, 10, 0.902); */
+    --color-primary-variant: rgba(252, 114, 21, 0.72);
     --color-light: rgba(255, 255, 255, 0.6);
 
     --transation: all 400ms ease;
@@ -42,10 +43,12 @@ body {
 
 /*** GENERAL STYLES *****/
 
-a:link { text-decoration: none;
+a:link { 
+    text-decoration: none;
     color:var(--color-white);
 }
-a:hover { text-decoration: none;
+a:hover { 
+    text-decoration: none;
     color:var(--color-white);
 }
 
